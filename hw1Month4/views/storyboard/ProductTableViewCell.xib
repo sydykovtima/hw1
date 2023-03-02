@@ -95,15 +95,15 @@
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
             <connections>
-                <outlet property="costLable" destination="cN3-5Y-6PQ" id="PsJ-qa-Viw"/>
-                <outlet property="deliveryLable" destination="SN8-zo-D6F" id="tUC-0j-Sfd"/>
-                <outlet property="distanceLable" destination="jff-2C-B71" id="1Bf-hJ-8rm"/>
+                <outlet property="costLable" destination="cN3-5Y-6PQ" id="h71-3Z-7ZY"/>
+                <outlet property="deliveryLable" destination="SN8-zo-D6F" id="Cr9-ia-xCw"/>
+                <outlet property="distanceLable" destination="ZrD-ZP-CkZ" id="6lf-VF-HLR"/>
                 <outlet property="openCloseLable" destination="gf1-Mz-wCl" id="jtd-73-6Un"/>
-                <outlet property="productImageView" destination="s80-6U-FNo" id="wrr-fR-2oG"/>
-                <outlet property="productNameLable" destination="EKs-V5-eVM" id="MkM-TO-ueA"/>
-                <outlet property="rateLable" destination="eXc-Ub-Wl4" id="AcG-bj-KeM"/>
-                <outlet property="timeLable" destination="ZrD-ZP-CkZ" id="QfJ-rO-hvl"/>
-                <outlet property="whereFromProducts" destination="fhE-ux-8tW" id="KM7-7L-6nz"/>
+                <outlet property="productImageView" destination="s80-6U-FNo" id="Vfv-qf-D2E"/>
+                <outlet property="productNameLable" destination="EKs-V5-eVM" id="bSR-Yj-a5C"/>
+                <outlet property="rateLable" destination="eXc-Ub-Wl4" id="9mk-Gx-SBf"/>
+                <outlet property="timeLable" destination="jff-2C-B71" id="3gM-AU-sMn"/>
+                <outlet property="whereFromProducts" destination="fhE-ux-8tW" id="UH4-lC-2i4"/>
             </connections>
             <point key="canvasLocation" x="151.53846153846155" y="-115.16587677725119"/>
         </tableViewCell>

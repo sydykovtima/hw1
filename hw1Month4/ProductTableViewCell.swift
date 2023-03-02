@@ -7,6 +7,12 @@
 
 import UIKit
 
+protocol CounterCellDelegate{
+    func didSelectedNextVc(selected: Product)
+
+}
+
+
 class ProductTableViewCell: UITableViewCell {
     
     static let reuseIdentifier = String(describing: ProductTableViewCell.self)
@@ -19,7 +25,7 @@ class ProductTableViewCell: UITableViewCell {
     @IBOutlet private weak var deliveryLable: UILabel!
     @IBOutlet private weak var whereFromProducts: UILabel!
     @IBOutlet private weak var productImageView: UIImageView!
-    
+//    let selected = Product()
     func display(item: Product) {
         productImageView.image = UIImage(named: item.productsImageView)
         whereFromProducts.text = item.madeOnTheWord
@@ -37,6 +43,7 @@ class ProductTableViewCell: UITableViewCell {
         costLable.textColor = .lightGray
         whereFromProducts.textColor = .lightGray
     }
+
 }
 
 struct Product {
@@ -49,4 +56,10 @@ struct Product {
     let cost: String
     let rate: String
     let distance: String
+}
+
+extension Product {
+    public func getAllProduct() -> Array<Product> {
+        return Product
+    }
 }

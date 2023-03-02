@@ -102,9 +102,17 @@ extension ViewController: UITableViewDelegate {
     ) -> CGFloat {
         return 350
     }
+    
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        let secondVC = storyboard?.instantiateViewController(withIdentifier: "second_vc") as! SecondViewController
-        self.navigationController?.pushViewController(secondVC, animated: true)
+        let secondVC = storyboard?
+            .instantiateViewController(withIdentifier: "second_vc")
+        as! CounterCellDelegate
+        secondVC.nextVc()
+        navigationController?.pushViewController(
+            secondVC,
+            animated: true
+        )
+        
     }
 }
 
@@ -158,3 +166,7 @@ extension ViewController: UICollectionViewDelegateFlowLayout {
 }
 
 
+//let secondVc = storyboard?.instantiateViewController(withIdentifier: "second_vc") as! ViewController2
+//secondVc.info = names[indexPath.row] as! String
+//secondVc.num = numbers[indexPath.row] as! String
+//self.navigationController?.pushViewController(secondVc, animated: true)
